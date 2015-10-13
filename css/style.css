@@ -13,6 +13,12 @@
 html {
   font: 100%/1.5 'Lato', sans-serif; }
 
+#edit_items {
+  font-size: 85%; }
+
+#clean {
+  font-size: 85%; }
+
 /* ===== Layout ===== */
 #wrapper {
   margin: 10px auto;
@@ -36,8 +42,10 @@ header #add_items {
     border: none; }
 header #edit_items {
   float: right;
-  margin-top: 0.5em;
-  font-size: 85%; }
+  margin-top: 0.5em; }
+  header #edit_items p {
+    display: inline-block;
+    margin: 0; }
 
 main {
   margin: 1em 0; }
@@ -57,7 +65,11 @@ main {
       margin: 0 0.5em; }
     main .item input {
       padding-left: 0.5em;
-      width: 100%; }
+      width: 80%; }
+
+#clean {
+  text-align: center;
+  margin-top: 5em; }
 
 /* ===== Styles ===== */
 body {
@@ -91,6 +103,7 @@ hr {
   color: #b4b4b9; }
 
 .item input {
-  border: 1px solid #8c8c91; }
+  border: none;
+  background-color: #f8f8fa; }
 
 /*# sourceMappingURL=style.css.map */

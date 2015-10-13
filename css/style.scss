@@ -23,6 +23,10 @@ html {
     font: 100%/1.5 'Lato', sans-serif;
 }
 
+#edit_items { font-size: 85%; }
+
+#clean { font-size: 85%; }
+
 /* ===== Layout ===== */
 #wrapper {
     margin: 10px auto;
@@ -55,7 +59,11 @@ header {
     #edit_items {
         float: right;
         margin-top: 0.5em;
-        font-size: 85%;
+        
+        p {
+            display: inline-block;
+            margin: 0;
+        }
     }
 }
 
@@ -81,9 +89,14 @@ main {
         
         input {
             padding-left: 0.5em;
-            width: 100%;
+            width: 80%;
         }
     }
+}
+
+#clean {
+    text-align: center;
+    margin-top: 5em;
 }
 
 
@@ -121,4 +134,7 @@ hr { border: 1px solid $silver; }
     color: $dolphin;
 }
 
-.item input { border: 1px solid $gunmetal; }
+.item input {
+    border: none;
+    background-color: $porcelain;
+}
