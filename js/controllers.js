@@ -30,8 +30,12 @@ controllers.controller('appCtrl', function ($scope, $http) {
     }
     $scope.addItem = function(item){
         var newItem = { "name" : item, "complete" : false };
-        $scope.items.unshift(newItem);
-        document.getElementById('addItemInput').value = '';
+        console.log();
+            if ( item != undefined && /[A-Za-z]/g.test(item) ){
+                $scope.items.unshift(newItem);
+            }
+        //document.getElementById('addItemInput').value = '';
+        $scope.newItem = '';
     }
     $scope.keyboardHandler = function(keyEvent, item){
         if(keyEvent.which === 13){
