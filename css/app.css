@@ -10,6 +10,7 @@
   src: url("../fonts/lato-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-light-webfont.woff2") format("woff2"), url("../fonts/lato-light-webfont.woff") format("woff"), url("../fonts/lato-light-webfont.ttf") format("truetype"), url("../fonts/lato-light-webfont.svg#svgFontName") format("svg");
   /* Legacy iOS */
   font-weight: 200; }
+
 html {
   font: 100%/1.5 'Lato', sans-serif; }
 
@@ -28,6 +29,7 @@ html {
 
 header h1 {
   text-align: center; }
+
 header #add_items {
   height: 2em;
   display: flex;
@@ -40,6 +42,7 @@ header #add_items {
     height: 100%;
     width: 100%;
     border: none; }
+
 header #edit_items {
   float: right;
   margin-top: 0.5em; }
@@ -106,4 +109,4 @@ hr {
   border: none;
   background-color: #f8f8fa; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=maps/app.css.map */
