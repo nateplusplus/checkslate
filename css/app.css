@@ -2,7 +2,6 @@
 		Checkslate
 */
 /* ===== Typography ===== */
-/* Fonts */
 @font-face {
   font-family: 'Lato';
   src: url("../fonts/lato-light-webfont.eot");
@@ -20,12 +19,15 @@ html {
 #clean {
   font-size: 85%; }
 
-/* ===== Layout ===== */
+body {
+  background-color: #f8f8fa; }
+
 #wrapper {
   margin: 10px auto;
   padding: 2.5%;
   width: 90%;
-  max-width: 550px; }
+  max-width: 550px;
+  background-color: white; }
 
 header h1 {
   text-align: center; }
@@ -49,6 +51,12 @@ header #edit_items {
   header #edit_items p {
     display: inline-block;
     margin: 0; }
+
+#add_items {
+  border: 1px solid #8c8c91;
+  background-color: white; }
+  #add_items input {
+    background-color: transparent; }
 
 main {
   margin: 1em 0; }
@@ -74,13 +82,11 @@ main {
   text-align: center;
   margin-top: 5em; }
 
-/* ===== Styles ===== */
-body {
+.item input {
+  border: none;
   background-color: #f8f8fa; }
 
-#wrapper {
-  background-color: white; }
-
+/* ===== Skins ===== */
 .btn {
   cursor: pointer;
   color: #8c8c91; }
@@ -93,20 +99,10 @@ body {
 .rounded {
   border-radius: 5px; }
 
-#add_items {
-  border: 1px solid #8c8c91;
-  background-color: white; }
-  #add_items input {
-    background-color: transparent; }
-
 hr {
   border: 1px solid #f0f0f5; }
 
 .completed {
   color: #b4b4b9; }
-
-.item input {
-  border: none;
-  background-color: #f8f8fa; }
 
 /*# sourceMappingURL=maps/app.css.map */

@@ -1,0 +1,37 @@
+header {
+		h1 {
+				text-align: center;
+		}
+		#add_items {
+				height: 2em;
+				display: flex;
+				flex-direction: row;
+				justify-content: flex-start;
+				align-items: center;
+				
+				.btn {
+						margin: 0 .5em;
+				}
+				input {
+						height: 100%;
+						width: 100%;
+						border: none;
+				}
+		}
+		
+		#edit_items {
+				float: right;
+				margin-top: 0.5em;
+				
+				p {
+						display: inline-block;
+						margin: 0;
+				}
+		}
+}
+
+#add_items {
+		border: 1px solid $gunmetal;
+		background-color: white;
+		input { background-color: transparent; }
+}

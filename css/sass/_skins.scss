@@ -1,0 +1,19 @@
+/* ===== Skins ===== */
+
+.btn {
+		cursor: pointer;
+		color: $gunmetal;
+		&:hover {
+				color: $dolphin;
+		}
+}
+
+.item {  cursor: pointer; }
+
+.rounded {   border-radius: 5px; }
+
+hr { border: 1px solid $silver; }
+
+.completed {
+		color: $dolphin;
+}
