@@ -3,9 +3,9 @@
 .btn {
 		cursor: pointer;
 		text-decoration: none;
-		color: $gunmetal;
+		color: $txt_mid_gray;
 		&:hover {
-				color: $dolphin;
+				color: $txt_light_gray;
 		}
 }
 
@@ -13,15 +13,15 @@
 
 .rounded {   border-radius: 5px; }
 
-hr { border: 1px solid $silver; }
+hr { border: 1px solid $bg_light_gray; }
 
 .completed {
-		color: $dolphin;
+		color: $txt_light_gray;
 }
 
 .label {
 	display: inline-block;
 	font-size: 0.8em;
 	vertical-align: baseline;
-	color: $dolphin;
+	color: $txt_light_gray;
 }
