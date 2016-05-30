@@ -18,6 +18,7 @@
 										<input id="addItemInput" type="text" placeholder="Add Item" class="rounded" ng-model="newItem" ng-keypress="keyboardHandler($event, newItem)">
 								</div>
 								<!-- Edit Items Button -->
+								<span ng-show="edit">Editing list |</span>
 								<div class="btn" id="edit_items" ng-click="toggleEdit()">
 										<i ng-hide="edit" class="fa fa-edit fa-sm"></i>
 										<p ng-hide="edit">Edit Items</p>
