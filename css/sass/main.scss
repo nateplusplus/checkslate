@@ -1,5 +1,5 @@
 /*
-    Checkslate
+		Checkslate
 */
 
 
@@ -8,19 +8,19 @@
 
 /* Fonts */
 @font-face {
-    font-family: 'Lato';
-    src: url('../fonts/lato-light-webfont.eot'); /* IE9 Compat Modes */
-    src:
-        url('../fonts/lato-light-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-        url('../fonts/lato-light-webfont.woff2')  format('woff2'), /* Super Modern Browsers */
-        url('../fonts/lato-light-webfont.woff')  format('woff'), /* Pretty Modern Browsers */
-        url('../fonts/lato-light-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-        url('../fonts/lato-light-webfont.svg#svgFontName')  format('svg'); /* Legacy iOS */
-    font-weight: 200;
+		font-family: 'Lato';
+		src: url('../fonts/lato-light-webfont.eot'); /* IE9 Compat Modes */
+		src:
+				url('../fonts/lato-light-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+				url('../fonts/lato-light-webfont.woff2')  format('woff2'), /* Super Modern Browsers */
+				url('../fonts/lato-light-webfont.woff')  format('woff'), /* Pretty Modern Browsers */
+				url('../fonts/lato-light-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+				url('../fonts/lato-light-webfont.svg#svgFontName')  format('svg'); /* Legacy iOS */
+		font-weight: 200;
 }
 
 html {
-    font: 100%/1.5 'Lato', sans-serif;
+		font: 100%/1.5 'Lato', sans-serif;
 }
 
 #edit_items { font-size: 85%; }
@@ -29,74 +29,74 @@ html {
 
 /* ===== Layout ===== */
 #wrapper {
-    margin: 10px auto;
-    padding: 2.5%;
-    width: 90%;
-    max-width: 550px;
+		margin: 10px auto;
+		padding: 2.5%;
+		width: 90%;
+		max-width: 550px;
 }
 
 header {
-    h1 {
-        text-align: center;
-    }
-    #add_items {
-        height: 2em;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        
-        .btn {
-            margin: 0 .5em;
-        }
-        input {
-            height: 100%;
-            width: 100%;
-            border: none;
-        }
-    }
-    
-    #edit_items {
-        float: right;
-        margin-top: 0.5em;
-        
-        p {
-            display: inline-block;
-            margin: 0;
-        }
-    }
+		h1 {
+				text-align: center;
+		}
+		#add_items {
+				height: 2em;
+				display: flex;
+				flex-direction: row;
+				justify-content: flex-start;
+				align-items: center;
+				
+				.btn {
+						margin: 0 .5em;
+				}
+				input {
+						height: 100%;
+						width: 100%;
+						border: none;
+				}
+		}
+		
+		#edit_items {
+				float: right;
+				margin-top: 0.5em;
+				
+				p {
+						display: inline-block;
+						margin: 0;
+				}
+		}
 }
 
 main {
-    margin: 1em 0;
-    
-    .item {
-        -webkit-display: flex;
-        -ms-display: flex;
-        display: flex;
-        -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        -webkit-justify-content: flex-start;
-        -ms-justify-content: flex-start;
-        justify-content: flex-start;
-        margin: 0.5em 0;
-        padding-left: 1em;
-        
-        .btn {
-            margin: 0 0.5em;
-        }
-        
-        input {
-            padding-left: 0.5em;
-            width: 80%;
-        }
-    }
+		margin: 1em 0;
+		
+		.item {
+				-webkit-display: flex;
+				-ms-display: flex;
+				display: flex;
+				-webkit-flex-direction: row;
+				-ms-flex-direction: row;
+				flex-direction: row;
+				-webkit-justify-content: flex-start;
+				-ms-justify-content: flex-start;
+				justify-content: flex-start;
+				margin: 0.5em 0;
+				padding-left: 1em;
+				
+				.btn {
+						margin: 0 0.5em;
+				}
+				
+				input {
+						padding-left: 0.5em;
+						width: 80%;
+				}
+		}
 }
 
 #clean {
-    text-align: center;
-    margin-top: 5em;
+		text-align: center;
+		margin-top: 5em;
 }
 
 
@@ -110,31 +110,31 @@ $gunmetal: rgb(140,140,145);
 body { background-color: $porcelain; }
 #wrapper { background-color: white; }
 .btn {
-    cursor: pointer;
-    color: $gunmetal;
-    &:hover {
-        color: $dolphin;
-    }
+		cursor: pointer;
+		color: $gunmetal;
+		&:hover {
+				color: $dolphin;
+		}
 }
 .item {  cursor: pointer; }
 
 .rounded {
-    border-radius: 5px;
+		border-radius: 5px;
 }
 
 #add_items {
-    border: 1px solid $gunmetal;
-    background-color: white;
-    input { background-color: transparent; }
+		border: 1px solid $gunmetal;
+		background-color: white;
+		input { background-color: transparent; }
 }
 
 hr { border: 1px solid $silver; }
 
 .completed {
-    color: $dolphin;
+		color: $dolphin;
 }
 
 .item input {
-    border: none;
-    background-color: $porcelain;
+		border: none;
+		background-color: $porcelain;
 }
