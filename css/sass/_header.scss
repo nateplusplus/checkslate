@@ -20,9 +20,8 @@ header {
 		}
 		
 		#edit_items {
-				float: right;
-				margin-top: 0.5em;
-				
+			margin-left: 0.25em;
+			display: inline-block;
 				p {
 						display: inline-block;
 						margin: 0;
@@ -34,4 +33,10 @@ header {
 		border: 1px solid $gunmetal;
 		background-color: white;
 		input { background-color: transparent; }
+}
+
+#action_toggle {
+	display: block;
+	text-align: right;
+	margin-top: 0.5em;
 }

@@ -46,8 +46,8 @@ header #add_items {
     border: none; }
 
 header #edit_items {
-  float: right;
-  margin-top: 0.5em; }
+  margin-left: 0.25em;
+  display: inline-block; }
   header #edit_items p {
     display: inline-block;
     margin: 0; }
@@ -58,8 +58,13 @@ header #edit_items {
   #add_items input {
     background-color: transparent; }
 
+#action_toggle {
+  display: block;
+  text-align: right;
+  margin-top: 0.5em; }
+
 main {
-  margin: 1em 0; }
+  margin: 0px; }
   main .item {
     -webkit-display: flex;
     -ms-display: flex;
@@ -79,6 +84,7 @@ main {
       width: 80%; }
 
 #clean {
+  display: block;
   text-align: center;
   margin-top: 5em; }
 
@@ -89,6 +95,7 @@ main {
 /* ===== Skins ===== */
 .btn {
   cursor: pointer;
+  text-decoration: none;
   color: #8c8c91; }
   .btn:hover {
     color: #b4b4b9; }
@@ -103,6 +110,12 @@ hr {
   border: 1px solid #f0f0f5; }
 
 .completed {
+  color: #b4b4b9; }
+
+.label {
+  display: inline-block;
+  font-size: 0.8em;
+  vertical-align: baseline;
   color: #b4b4b9; }
 
 /*# sourceMappingURL=maps/app.css.map */

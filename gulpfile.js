@@ -15,10 +15,6 @@ gulp.task('compileSass', function() {
 		.pipe(gulp.dest('css'));
 });
 
-gulp.task('watch', function() {
-	gulp.watch('css/sass/**/**', ['compileSass']);
-});
-
 gulp.task('minifyCss', ['compileSass'], function() {
 	return gulp.src('css/app.css')
 		.pipe(sourcemaps.init())
@@ -26,6 +22,10 @@ gulp.task('minifyCss', ['compileSass'], function() {
 		.pipe(rename('app.min.css'))
 		.pipe(sourcemaps.write('./maps'))
 		.pipe(gulp.dest('css'));
+});
+
+gulp.task('watch', function() {
+	gulp.watch('css/sass/**/**', ['minifyCss']);
 });
 
 gulp.task('clean', function() {

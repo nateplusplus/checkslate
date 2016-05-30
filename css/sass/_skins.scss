@@ -2,6 +2,7 @@
 
 .btn {
 		cursor: pointer;
+		text-decoration: none;
 		color: $gunmetal;
 		&:hover {
 				color: $dolphin;
@@ -16,4 +17,11 @@ hr { border: 1px solid $silver; }
 
 .completed {
 		color: $dolphin;
+}
+
+.label {
+	display: inline-block;
+	font-size: 0.8em;
+	vertical-align: baseline;
+	color: $dolphin;
 }
