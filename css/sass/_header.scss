@@ -2,22 +2,6 @@ header {
 		h1 {
 				text-align: center;
 		}
-		#add_items {
-				height: 2em;
-				display: flex;
-				flex-direction: row;
-				justify-content: flex-start;
-				align-items: center;
-				
-				.btn {
-						margin: 0 .5em;
-				}
-				input {
-						height: 100%;
-						width: 100%;
-						border: none;
-				}
-		}
 		
 		#edit_items {
 			margin-left: 0.25em;
@@ -30,9 +14,45 @@ header {
 }
 
 #add_items {
-		border: 1px solid $txt_mid_gray;
-		background-color: white;
-		input { background-color: transparent; }
+	height: 30px;
+	border: 1px solid $txt_mid_gray;
+	background-color: white;
+	font-size: 0px;
+	& > * {
+		font-size: 14px;
+		box-sizing: border-box;
+		vertical-align: top;
+		height: 100%;
+		display: inline-block;
+	}
+	input {
+		background-color: transparent;
+		border: none;
+		padding-left: 1.2em;
+	}
+}
+
+#add_items {
+	input {
+		width: 75%;
+	}
+	label {
+		width: 10%;
+	}
+	.addbtn {
+		width: 15%;
+		float: right;
+	}
+}
+@media screen and (min-width: 400px) {
+	#add_items {
+		input {
+			width: 80%;
+		}
+		.addbtn {
+			width: 10%;
+		}
+	}
 }
 
 #action_toggle {

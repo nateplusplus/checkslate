@@ -3,10 +3,53 @@
 .btn {
 		cursor: pointer;
 		text-decoration: none;
-		color: $txt_mid_gray;
-		&:hover {
-				color: $txt_light_gray;
+		padding: 5px;
+		text-align: center;
+		&:visited {
+			color: black;
 		}
+}
+
+.btn-green {
+	&:hover,&:active,&:focus {
+		color: white;
+		background-color: $green;
+	}
+}
+.btn-blue {
+	&:hover,&:active,&:focus {
+		color: white;
+		background-color: $blue;
+	}
+}
+.btn-gray {
+	&:hover,&:active,&:focus {
+		color: white;
+		background-color: $txt_light_gray;
+	}
+}
+.link-green {
+	&:hover,&:active,&:focus {
+		color: $green;
+		outline: $green solid 1px;
+	}
+}
+.link-blue {
+	&:hover,&:active,&:focus {
+		color: $blue;
+		outline: $blue solid 1px;
+	}
+}
+.link-gray {
+	&:hover,&:active,&:focus {
+		color: $txt_light_gray;
+		outline: $bg_light_gray solid 1px;
+	}
+}
+.link-danger {
+	&:hover, &:active, &:focus {
+		color: $red;
+	}
 }
 
 .item {  cursor: pointer; }

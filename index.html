@@ -14,14 +14,14 @@
 								<h1>checkslate</h1>
 								<div id="add_items" class="rounded">
 										<!-- Add item -->
-										<label for="addItemInput" title="Add items to list"><i class="fa fa-plus fa-sm btn" role="presentation"></i></label>
+										<label class="btn btn-green" for="addItemInput" title="Add items to list"><i class="fa fa-plus fa-sm" role="presentation"></i></label>
 										<input id="addItemInput" type="text" placeholder="Add Item" class="rounded" ng-model="newItem" ng-keypress="keyboardHandler($event, newItem)">
-										<a href="#" class="btn" ng-click="addItem(newItem)" role="button">Add</a>
+										<a href="#" class="addbtn btn btn-green" ng-click="addItem(newItem)" role="button">Add</a>
 								</div>
 								<!-- Edit Items Button -->
 								<div id="action_toggle">
 									<span ng-show="edit" class="label">Editing list |</span>
-									<a class="btn" id="edit_items" ng-click="toggleEdit()" role="button" tabindex="0">
+									<a class="btn link-blue" id="edit_items" ng-click="toggleEdit()" role="button" tabindex="0">
 											<i ng-hide="edit" class="fa fa-edit fa-sm"></i>
 											<p ng-hide="edit">Edit Items</p>
 											<i ng-show="edit" class="fa fa-check fa-sm"></i>
@@ -33,11 +33,11 @@
 
 								<!-- incomplete items -->
 								<section id="incomplete_list">
-										<div class="item" ng-repeat="item in items | incomplete">
+										<div class="item link-gray" ng-repeat="item in items | incomplete">
 												<input type="text" ng-show="edit" ng-model="item.name" ng-value="item.name" class="rounded">
 												<a ng-click="itemClicked(item)" ng-hide="edit" tabindex="0" role="button">{{item.name}}</a>
-												<a ng-show="edit" class="delete btn" ng-click="deleteItem(item)" tabindex="0" role="button">
-														<i class="fa fa-trash fa-md"></i>
+												<a ng-show="edit" class="delete btn link-danger" ng-click="deleteItem(item)" tabindex="0" role="button">
+														<i class="fa fa-times fa-md"></i>
 												</a>
 										</div>
 								</section>
@@ -46,11 +46,11 @@
 
 								<!-- completed items -->
 								<section id="completed_list">
-										<div class="item completed" ng-repeat="item in items | complete">
+										<div class="item completed link-blue" ng-repeat="item in items | complete">
 												<input type="text" ng-show="edit" ng-model="item.name" ng-value="item.name" class="rounded">
 												<a ng-click="itemClicked(item)" ng-hide="edit" tabindex="0" role="button">{{item.name}}</a>
-												<a ng-show="edit" class="delete btn" ng-click="deleteItem(item)" tabindex="0" role="button">
-														<i class="fa fa-trash fa-md"></i>
+												<a ng-show="edit" class="delete btn link-danger" ng-click="deleteItem(item)" tabindex="0" role="button">
+														<i class="fa fa-times fa-md"></i>
 												</a>
 										</div>
 								</section>
