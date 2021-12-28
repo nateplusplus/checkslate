@@ -5,6 +5,4 @@ A single-page application built using Angular, which allows a user to re-use a c
 
 Often times, I have repeat tasks to accomplish. It's handy to be able to check them off, but annoying to repeatedly create the same checklist. Here's my solution.
 
-About the project: http://www.natehub.net/checkslate
-
 Working Sample: http://code.natehub.net/projects/checkslate
